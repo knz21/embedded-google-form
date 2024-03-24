@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "types": [
+            "google-apps-script"
+        ]
+    },
+    "include": [
+        "**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

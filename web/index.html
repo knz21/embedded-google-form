@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdGUQ-V1Hb5tDmWCXORXXUMEVZgw4ximb7POBDxiLNHrzuWgQ/formResponse"
+            method="post" target="hidden_iframe" onsubmit="submitted=true;" class="c-form">
+            <label for="name">name</label>
+            <input type="text" id="name" name="entry.112281967" placeholder="name">
+
+            <label for="email">email</label>
+            <input type="email" id="email" name="entry.1830295513" placeholder="sample@example.com">
+
+            <label for="message">message</label>
+            <textarea id="message" name="entry.287124724" placeholder="message"></textarea>
+
+            <button type="submit">submit</button>
+        </form>
+
+    </div>
+</body>
+<script type="text/javascript">
+    let submitted = false;
+</script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+    onload="if(submitted){window.location='thanks.html';}"></iframe>
+
+</html>
